@@ -1,0 +1,6 @@
+CRITICAL - 2021-07-15 03:31:32 --> syntax error, unexpected variable "$routes"
+#0 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt()
+#1 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#2 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#3 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\spark(65): CodeIgniter\CLI\Console->run()
+#4 {main}

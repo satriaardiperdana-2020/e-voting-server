@@ -1,0 +1,1240 @@
+ERROR - 2021-06-12 06:03:40 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-06-12 06:03:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#4 /home/mocha/ci-voting/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->auth()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 07:15:45 --> Class 'Config\App\Filters\Auth' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(407): CodeIgniter\Filters\Filters->run()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#2 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#4 {main}
+ERROR - 2021-06-12 07:56:06 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-06-12 07:56:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#4 /home/mocha/ci-voting/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Login->auth()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 08:39:50 --> Invalid file: register.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Register.php(13): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Register->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 08:58:12 --> Class 'App\Controllers\UserModel' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Register->save()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 09:09:21 --> Invalid file: dashboard.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Dashboard.php(13): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 09:09:22 --> Invalid file: dashboard.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Dashboard.php(13): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 15:55:14 --> Cannot declare class App\Controllers\Login, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 15:55:24 --> Invalid file: admin.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Admin.php(13): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Admin->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 16:04:22 --> Cannot declare class App\Controllers\Admin, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 16:04:22 --> Cannot declare class App\Controllers\Admin, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 16:04:48 --> Cannot declare class App\Controllers\Admin, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 16:04:49 --> Cannot declare class App\Controllers\Admin, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 16:04:50 --> Cannot declare class App\Controllers\Admin, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-06-12 16:51:46 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 16:51:46 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(24): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+CRITICAL - 2021-06-12 17:02:09 --> Invalid file: tambah.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Calon.php(35): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->tambah()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 17:09:59 --> Undefined property: CodeIgniter\View\View::$load
+#0 /home/mocha/ci-voting/app/Views/main.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Main.php(13): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Main->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:10:27 --> Undefined property: CodeIgniter\View\View::$load
+#0 /home/mocha/ci-voting/app/Views/main.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Main.php(13): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Main->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:10:45 --> Undefined property: CodeIgniter\View\View::$load
+#0 /home/mocha/ci-voting/app/Views/main.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Main.php(13): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Main->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:10:57 --> Undefined property: CodeIgniter\View\View::$load
+#0 /home/mocha/ci-voting/app/Views/main.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Main.php(13): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Main->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:10:57 --> Undefined property: CodeIgniter\View\View::$load
+#0 /home/mocha/ci-voting/app/Views/main.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Main.php(13): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Main->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:14:43 --> Undefined property: App\Controllers\Calon::$load
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 17:15:14 --> Undefined property: App\Controllers\Calon::$load
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 17:18:02 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:19:39 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:20:01 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:20:01 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:20:02 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:20:03 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:21:20 --> Class 'App\Controllers\Controller' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:21:35 --> Class 'App\Controllers\Controller' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:21:35 --> Class 'App\Controllers\Controller' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:21:39 --> Class 'App\Controllers\Controller' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:21:51 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:22:05 --> Class 'App\Controllers\CI_Controller' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 17:24:16 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:24:20 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 17:25:17 --> Cannot call constructor
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(900): App\Controllers\Calon->__construct()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+ERROR - 2021-06-12 18:19:31 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:19:31 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+ERROR - 2021-06-12 18:20:05 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:20:05 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+CRITICAL - 2021-06-12 18:21:01 --> Undefined variable: dataBerkas
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(74): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->save()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 18:21:27 --> Undefined variable: nama
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(80): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->save()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+ERROR - 2021-06-12 18:22:16 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:22:16 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+CRITICAL - 2021-06-12 18:28:45 --> Call to a member function getRandomName() on null
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->save()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 18:31:27 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in /home/mocha/ci-voting/app/Controllers/Calon.php on line 69 and at least 1 expected
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(69): CodeIgniter\HTTP\RedirectResponse->to()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->save()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 18:31:43 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in /home/mocha/ci-voting/app/Controllers/Calon.php on line 69 and at least 1 expected
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(69): CodeIgniter\HTTP\RedirectResponse->to()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->save()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 18:32:03 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in /home/mocha/ci-voting/app/Controllers/Calon.php on line 69 and at least 1 expected
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(69): CodeIgniter\HTTP\RedirectResponse->to()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->save()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+ERROR - 2021-06-12 18:34:18 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:34:18 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+ERROR - 2021-06-12 18:37:25 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:37:25 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+ERROR - 2021-06-12 18:37:31 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:37:31 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+ERROR - 2021-06-12 18:39:09 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:39:09 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+ERROR - 2021-06-12 18:39:13 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 18:39:13 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+CRITICAL - 2021-06-12 19:05:29 --> Invalid file: admin/calon.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Calon.php(17): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 19:42:44 --> Invalid file: admin/calon.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Calon.php(17): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+ERROR - 2021-06-12 19:45:50 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-06-12 19:45:50 --> Unknown column 'slug' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(26): CodeIgniter\BaseModel->first()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->view()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+ERROR - 2021-06-12 19:51:35 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2021-06-12 19:51:35 --> Unknown column 'id' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(96): CodeIgniter\BaseModel->delete()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->delete()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+ERROR - 2021-06-12 19:54:07 --> Unknown column 'id_calong' in 'where clause'
+CRITICAL - 2021-06-12 19:54:07 --> Unknown column 'id_calong' in 'where clause'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#6 /home/mocha/ci-voting/app/Controllers/Calon.php(96): CodeIgniter\BaseModel->delete()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->delete()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#12 {main}
+CRITICAL - 2021-06-12 20:48:35 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#3 /home/mocha/ci-voting/app/Controllers/Calon.php(98): view()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->edit()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#9 {main}
+CRITICAL - 2021-06-12 20:49:25 --> Undefined variable: cal
+#0 /home/mocha/ci-voting/app/Views/admin/calon/edit.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Calon.php(98): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->edit()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 20:57:38 --> Undefined variable: id
+#0 /home/mocha/ci-voting/app/Controllers/Calon.php(125): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->update()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 20:57:55 --> Too few arguments to function App\Controllers\Calon::update(), 0 passed in /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->update()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 20:58:58 --> The original file is not a valid file.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(143): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /home/mocha/ci-voting/app/Controllers/Calon.php(131): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->update()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#7 {main}
+CRITICAL - 2021-06-12 21:00:37 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->update()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 21:01:53 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 21:03:09 --> The original file is not a valid file.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/HTTP/Files/UploadedFile.php(143): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /home/mocha/ci-voting/app/Controllers/Calon.php(131): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Calon->update()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#7 {main}
+CRITICAL - 2021-06-12 21:31:57 --> Invalid file: admin/pemilih.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Pemilih.php(19): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Pemilih->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 21:50:55 --> Invalid file: admin/pemilih/tambah.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Pemilih.php(27): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Pemilih->tambah()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 21:59:11 --> Undefined variable: cal
+#0 /home/mocha/ci-voting/app/Views/admin/pemilih.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Pemilih.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Pemilih->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 21:59:42 --> Trying to access array offset on value of type null
+#0 /home/mocha/ci-voting/app/Views/admin/calon/edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Pemilih.php(130): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Pemilih->edit()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 22:00:37 --> Invalid file: admin/pemilih/edit.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Pemilih.php(130): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Pemilih->edit()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 22:15:45 --> Undefined variable: data
+#0 /home/mocha/ci-voting/app/Controllers/Laporan.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Laporan->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 22:15:53 --> Invalid file: admin/laporan.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Laporan.php(19): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Laporan->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 22:29:01 --> Cannot declare class App\Controllers\Pemilih, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-12 22:29:10 --> Invalid file: header.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Voting.php(18): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 22:36:13 --> Invalid file: voting.php
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#2 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}
+CRITICAL - 2021-06-12 22:37:06 --> authAdmin filter must have a matching alias defined.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/Filters.php(373): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 22:37:19 --> AuthAdmin filter must have a matching alias defined.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/Filters.php(373): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 22:37:20 --> AuthAdmin filter must have a matching alias defined.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/Filters.php(373): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 22:37:20 --> AuthAdmin filter must have a matching alias defined.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/Filters.php(373): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 22:37:20 --> AuthAdmin filter must have a matching alias defined.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/Filters.php(373): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 22:37:20 --> AuthAdmin filter must have a matching alias defined.
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/Filters.php(373): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\Filters\Filters->enableFilter()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 23:14:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:15:23 --> Undefined property: App\Controllers\Voting::$db
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:16:27 --> Class 'App\Models\CI_Model' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(14): spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:19:07 --> Class 'CI_Model' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(14): spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:21:27 --> Class 'App\Models\CI_Model' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(14): spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:21:28 --> Class 'App\Models\CI_Model' not found
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(300): include_once()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(14): spl_autoload_call()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:21:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:22:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:23:30 --> Call to undefined method App\Models\VotingModel::tampilCalonByPemilih
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): CodeIgniter\Model->__call()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:23:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 23:24:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 23:24:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 23:24:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 23:24:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+ERROR - 2021-06-12 23:24:43 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:24:43 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+ERROR - 2021-06-12 23:26:16 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:26:16 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:26:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#5 {main}
+CRITICAL - 2021-06-12 23:28:55 --> Undefined variable: calon
+#0 /home/mocha/ci-voting/app/Views/voting.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:32:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#6 {main}
+CRITICAL - 2021-06-12 23:37:09 --> Undefined variable: db
+#0 /home/mocha/ci-voting/app/Models/VotingModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#7 {main}
+ERROR - 2021-06-12 23:37:20 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:37:20 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Models/VotingModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#11 {main}
+ERROR - 2021-06-12 23:37:21 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:37:21 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Models/VotingModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#11 {main}
+ERROR - 2021-06-12 23:37:22 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:37:22 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Models/VotingModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#11 {main}
+ERROR - 2021-06-12 23:37:22 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:37:22 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Models/VotingModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#11 {main}
+ERROR - 2021-06-12 23:37:23 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:37:23 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Models/VotingModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#11 {main}
+ERROR - 2021-06-12 23:37:23 --> Not unique table/alias: 'calon'
+CRITICAL - 2021-06-12 23:37:23 --> Not unique table/alias: 'calon'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Models/VotingModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#11 {main}
+CRITICAL - 2021-06-12 23:38:26 --> Undefined variable: cal
+#0 /home/mocha/ci-voting/app/Views/voting.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:38:55 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:38:57 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:38:58 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:39:19 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:39:20 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:39:21 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:39:21 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+CRITICAL - 2021-06-12 23:39:22 --> Undefined index: foto
+#0 /home/mocha/ci-voting/app/Views/voting.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}
+ERROR - 2021-06-12 23:42:10 --> Unknown column 'voting.id_voting' in 'field list'
+CRITICAL - 2021-06-12 23:42:10 --> Unknown column 'voting.id_voting' in 'field list'
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mocha/ci-voting/app/Models/VotingModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mocha/ci-voting/app/Controllers/Voting.php(16): App\Models\VotingModel->tampilCalonByPemilih()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#8 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#11 {main}
+CRITICAL - 2021-06-12 23:45:42 --> Undefined index: jumlah_voting
+#0 /home/mocha/ci-voting/app/Views/voting.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(230): include('/home/mocha/ci-...')
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render()
+#4 /home/mocha/ci-voting/app/Controllers/Voting.php(19): view()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Voting->index()
+#6 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#10 {main}

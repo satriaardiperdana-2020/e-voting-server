@@ -1,0 +1,10 @@
+CRITICAL - 2021-06-14 10:31:09 --> Division by zero
+#0 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Debug/Toolbar.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Debug/Toolbar.php(346): CodeIgniter\Debug\Toolbar->run()
+#2 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/DebugToolbar.php(51): CodeIgniter\Debug\Toolbar->prepare()
+#3 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Filters/Filters.php(207): CodeIgniter\Filters\DebugToolbar->after()
+#4 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(454): CodeIgniter\Filters\Filters->run()
+#5 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/mocha/ci-voting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/mocha/ci-voting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/mocha/ci-...')
+#8 {main}

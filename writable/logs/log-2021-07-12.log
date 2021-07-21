@@ -1,0 +1,9 @@
+CRITICAL - 2021-07-12 04:00:25 --> file_get_contents(uploads/foto/foto.jpg): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\app\Controllers\Laporan.php(60): file_get_contents()
+#2 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Laporan->export()
+#3 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController()
+#4 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#5 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\Freelance\OnGoing\Ionic-Voting\ci-voting\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('...')
+#7 {main}
