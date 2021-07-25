@@ -27,3 +27,7 @@ untuk api yang lain urlnya bisa dilihat pada https://github.com/satriaardiperdan
 
 Jika ingin dijalankan silakan checkout source server dan import script sql berikut:
 https://github.com/satriaardiperdana-2020/e-voting-server/blob/main/ci-voting.sql
+
+apk source ini: https://drive.google.com/drive/folders/1mwwKY0wtzkmuENreu4tSwQbSCxBFmAg1?usp=sharing 
+
+video demo versi mobile dan web: https://drive.google.com/drive/folders/1dNv1AVEKtWXR7MveVIKYYR2QuhCS2_xz?usp=sharing
