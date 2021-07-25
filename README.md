@@ -23,3 +23,7 @@ Akan dapat response:
 }
 
 untuk api yang lain urlnya bisa dilihat pada https://github.com/satriaardiperdana-2020/e-voting-client-ionic/blob/main/src/app/remote-service.service.ts
+
+
+Jika ingin dijalankan silakan checkout source server dan import script sql berikut:
+https://github.com/satriaardiperdana-2020/e-voting-server/blob/main/ci-voting.sql
