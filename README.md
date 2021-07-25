@@ -3,8 +3,8 @@
 client: https://github.com/satriaardiperdana-2020/e-voting-client-ionic.git
 
 domain test versi web dan /API : https://evoting.codesatria.com/
-login pemilih: username: 3344556677889910, password: 3344556677889910
-login admin: username: admin1. password: admin
+login pemilih: username: 3344556677889910, password: 3344556677889910 (bisa untuk login versi mobile)
+login admin: username: admin1. password: admin (bisa untuk login versi mobile)
 
 
 cara test postman login admin:
